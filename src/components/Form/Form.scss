@@ -1,0 +1,80 @@
+.form-container {
+  padding: 4px 4px;
+  background-color: rgba(255, 255, 255, 0.835);
+  position: relative;
+  margin: 0 auto;
+  color: #7367f0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 4px solid #7367f0;
+  border-radius: 20px;
+
+  margin-top: 80px;
+
+  padding: 45px;
+
+  @media screen and (max-width: 450px) {
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 350px) {
+    padding: 15px;
+    width: 80%;
+  }
+
+  &__form {
+    > h1 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    > h2 {
+      text-align: center;
+      font-size: 30px;
+    }
+    &__input,
+    &__input-btn {
+      border: 2px solid #7367f0;
+      border-radius: 20px;
+      height: 50px;
+      margin-bottom: 30px;
+
+      > input {
+        width: 100%;
+        height: 100%;
+        padding: 0 30px;
+        font-size: calc(var(--font-size-primary) + 5px);
+
+        @media screen and (max-width: 550px) {
+          width: 80%;
+          padding: 0 15px;
+        }
+      }
+    }
+
+    &__input-btn {
+      background-color: #7367f0;
+      width: 100%;
+      color: white;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-style: italic;
+      cursor: pointer;
+      font-size: calc(var(--font-size-primary) + 3px);
+
+      &:hover {
+        background-color: transparent;
+        color: #7367f0;
+        text-decoration: none;
+      }
+    }
+
+    > label {
+      font-size: calc(var(--font-size-primary) + 3px);
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+  }
+}
